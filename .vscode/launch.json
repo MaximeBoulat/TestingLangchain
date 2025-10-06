@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Langchain",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/tutorial2.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${command:python.interpreterPath}",
+            "pythonPath": "${command:python.interpreterPath}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+                
+            },
+            "args": [],
+            "justMyCode": true,
+            "stopOnEntry": false
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+  "messages": [
+    {
+      "content": "what is the weather in sf",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": "911c39ca-4705-45a6-9326-ee800518168a",
+      "example": false
+    },
+    {
+      "content": "",
+      "additional_kwargs": {
+        "tool_calls": [
+          {
+            "id": "call_pguJUDHsRJQlmEhMV5ZvDc6f",
+            "function": {
+              "arguments": "{\"city\":\"San Francisco\"}",
+              "name": "get_weather"
+            },
+            "type": "function"
+          }
+        ],
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 56,
+          "total_tokens": 71,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        },
+        "model_name": "gpt-4o-2024-08-06",
+        "system_fingerprint": "fp_cbf1785567",
+        "id": "chatcmpl-CLc2jIfGacyYt3lz7oISLOrHjkOdM",
+        "service_tier": "default",
+        "finish_reason": "tool_calls",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "run--23377350-a962-481e-ad24-4e670abe259e-0",
+      "example": false,
+      "tool_calls": [
+        {
+          "name": "get_weather",
+          "args": {
+            "city": "San Francisco"
+          },
+          "id": "call_pguJUDHsRJQlmEhMV5ZvDc6f",
+          "type": "tool_call"
+        }
+      ],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 56,
+        "output_tokens": 15,
+        "total_tokens": 71,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    },
+    {
+      "content": "It's always sunny in San Francisco!",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "tool",
+      "name": "get_weather",
+      "id": "86ae6343-ab50-4962-bb6c-9bf07ed87cdf",
+      "tool_call_id": "call_pguJUDHsRJQlmEhMV5ZvDc6f",
+      "artifact": null,
+      "status": "success"
+    },
+    {
+      "content": "Surprisingly, it's always sunny in San Francisco! \u2600\ufe0f Enjoy the sunshine!",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 86,
+          "total_tokens": 104,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        },
+        "model_name": "gpt-4o-2024-08-06",
+        "system_fingerprint": "fp_cbf1785567",
+        "id": "chatcmpl-CLc2j6OyfYaF4LO0rDBn3Qtq4IVh9",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "run--8291a57c-5668-4dc7-b373-005a37d11866-0",
+      "example": false,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 86,
+        "output_tokens": 18,
+        "total_tokens": 104,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ]
+}
